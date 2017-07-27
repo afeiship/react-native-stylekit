@@ -3,6 +3,7 @@
 
 
 ## resources:
++ https://github.com/maskzh/react-native-stylekit
 
 ## todos:
 - [ ] todo list..
