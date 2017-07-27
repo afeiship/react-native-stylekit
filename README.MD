@@ -1,5 +1,5 @@
-# react-native-styles-base
-> Styles base for react native.
+# react-native-stylekit
+> Style toolkit for react native.
 
 
 ## resources:

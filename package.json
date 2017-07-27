@@ -1,8 +1,8 @@
 {
-  "name": "react-native-styles-base",
+  "name": "react-native-stylekit",
   "version": "0.0.0",
-  "description": "Styles base for react native.",
-  "homepage": "https://github.com/afeiship/react-native-styles-base",
+  "description": "Style toolkit for react native.",
+  "homepage": "https://github.com/afeiship/react-native-stylekit",
   "author": {
     "name": "afei",
     "email": "1290657123@qq.com"
@@ -24,7 +24,6 @@
     "yargs": "^4.7.1"
   },
   "dependencies": {
-    "next-js-core2": "github:afeiship/next-js-core2",
     "react": "^15.6.1",
     "react-native": "^0.46.4"
   }
