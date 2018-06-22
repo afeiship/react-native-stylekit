@@ -15,12 +15,29 @@ import {
   generateW1,
   generateWp
 } from 'react-native-stylekit';
-import {StyleSheet} from 'react-native';
 
-import {$config} from 'components';
+// YOUR CONFIG:
+const STYLE_CONFIG = {
+  blank: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 30],
+  borderRadius: [1, 2, 3, 4, 5],
+  box: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 30],
+  color: {
+    c: '#ccc',
+    d: '#ddd',
+    e: '#eee',
+    f: '#fff',
+    0: '#000',
+    3: '#333',
+    6: '#666',
+    9: '#999',
+    gold: '#A78845'
+  },
+  fontSize: [8, 10, 12, 14, 16, 18, 20, 22, 14, 16, 28, 30],
+  w1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20],
+  wp: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+};
 
-const {STYLE_CONFIG} = $config;
-
+// Create dyanmic styles:
 const _styles = nx.mix(
   styles,
   generateBlank(STYLE_CONFIG.blank),
@@ -46,7 +63,9 @@ const _styles = nx.mix(
   generateBox(STYLE_CONFIG.box, 'ml'),
 );
 
-export const sk = (inString) => {
+
+// export to your project: $style, $sk
+export const $sk = (inString) => {
   return $binder(_styles)(inString);
 };
 
