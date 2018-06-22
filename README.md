@@ -59,7 +59,10 @@ export default _styles;
 <View style={[$style.cRed, $style.m_10]}/>
 
 // Use $sk
-<View style={$sk('cRed m_10')}>
+<View style={$sk('cRed m_10')}/>
+
+// Or you can use $sk
+<View style={$sk('cRed m-10')}/>
 ```
 
 
