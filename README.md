@@ -38,7 +38,7 @@ const STYLE_CONFIG = {
 };
 
 // Create dyanmic styles:
-const _styles = nx.mix(
+const _styles = Object.assign(
   styles,
   generateBlank(STYLE_CONFIG.blank),
   generateBlank(STYLE_CONFIG.borderRadius),
